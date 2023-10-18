@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Home Page</title>
+        <title>Car Models</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,18 +47,26 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .home-content {
-            text-align: center;
+        .car-model {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .home-content p {
-            font-size: 18px;
+        .car-model img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>Car Models</h1>
     </header>
 
     <div class="navbar">
@@ -69,15 +77,23 @@
     </div>
 
     <div class="container">
-        <div class="home-content">
-            <h2>Welcome to Our Homepage</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ligula non sapien venenatis
-                convallis. Nunc sit amet urna id justo congue tincidunt. Vestibulum volutpat sapien auctor fringilla
-                dignissim.
-            </p>
+        <div class="car-model">
+            <img src="car1.jpg" alt="Car Model 1">
+            <h2>Car Model 1</h2>
+            <p>Description of Car Model 1.</p>
+        </div>
+
+        <div class="car-model">
+            <img src="car2.jpg" alt="Car Model 2">
+            <h2>Car Model 2</h2>
+            <p>Description of Car Model 2.</p>
+        </div>
+
+        <div class="car-model">
+            <img src="car3.jpg" alt="Car Model 3">
+            <h2>Car Model 3</h2>
+            <p>Description of Car Model 3.</p>
         </div>
     </div>
 </body>
-    </body>
 </html>

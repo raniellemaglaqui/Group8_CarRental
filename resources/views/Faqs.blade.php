@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Home Page</title>
+        <title>FAQs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: black;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -25,7 +25,7 @@
         }
 
         .navbar {
-            background-color: black;
+            background-color: #333;
             overflow: hidden;
         }
 
@@ -47,18 +47,18 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .home-content {
-            text-align: center;
+        .faq-question {
+            margin: 10px 0;
         }
 
-        .home-content p {
-            font-size: 18px;
+        .faq-question p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>FAQs</h1>
     </header>
 
     <div class="navbar">
@@ -69,15 +69,20 @@
     </div>
 
     <div class="container">
-        <div class="home-content">
-            <h2>Welcome to Our Homepage</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ligula non sapien venenatis
-                convallis. Nunc sit amet urna id justo congue tincidunt. Vestibulum volutpat sapien auctor fringilla
-                dignissim.
-            </p>
+        <div class="faq-question">
+            <h2>Question 1</h2>
+            <p>Answer to Question 1.</p>
+        </div>
+
+        <div class="faq-question">
+            <h2>Question 2</h2>
+            <p>Answer to Question 2.</p>
+        </div>
+
+        <div class="faq-question">
+            <h2>Question 3</h2>
+            <p>Answer to Question 3.</p>
         </div>
     </div>
 </body>
-    </body>
 </html>
