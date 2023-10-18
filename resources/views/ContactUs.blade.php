@@ -87,6 +87,7 @@
     </header>
 
     <div class="navbar">
+        <a href="welcome">Home</a>
         <a href="ContactUs">Contact Us</a>
         <a href="AboutUs">About Us</a>
         <a href="Faqs">FAQs</a>
