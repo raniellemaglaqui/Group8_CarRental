@@ -3,121 +3,153 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+        <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}" />
+		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        h1 {
-            font-size: 36px;
-        }
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="welcome" class="logo"><strong>CtrlDrive Auto Escapes</strong> <span>Website</span></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
 
-        .navbar {
-            background-color: black;
-            overflow: hidden;
-        }
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+		                <li> <a href="welcome">Home </a> </li>
 
-        .navbar a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+		                <li> <a href="Offers">Offers</a> </li>
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+		                <li> <a href="AboutUs">About Us</a> </li>
 
-        .contact-info {
-            margin: 10px 0;
-        }
+		                <li class="active"><a href="ContactUs">Contact Us</a></li>
 
-        .contact-info p {
-            margin: 5px 0;
-        }
+		                <li class="dropdown">
+		                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+		                    
+		                    <ul class="dropdown-menu">
+		                        <li><a href="Team">Team</a></li>
+				                <li><a href="Testimonials">Testimonials</a></li>
+				                <li><a href="Faqs">FAQ</a></li>
+				                <li><a href="Terms">Terms</a></li>
+		                    </ul>
+		                </li>
+            		</ul>
+				</nav>
 
-        .contact-form {
-            margin-top: 20px;
-        }
+				<!-- Main -->
+					<div id="main" class="alt">
 
-        .contact-form label {
-            display: block;
-            font-weight: bold;
-        }
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Contact Us</h1>
+									</header>
+									<span class="image main"><img src="images/map.jpg" alt="" /></span>
+									<p>Whether you have questions about our car rental services, need assistance with bookings, or want to discuss special requests, our dedicated team is ready to assist you. We value your feedback and are committed to providing you with the best possible experience. 
+										Don't hesitate to reach out to us – we're just a call or an email away!</p>
+								</div>
+							</section>
 
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+					</div>
 
-        .contact-form button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<header class="major">
+									<h2>Contact us</h2>
+								</header>
 
-    <div class="navbar">
-        <a href="welcome">Home</a>
-        <a href="ContactUs">Contact Us</a>
-        <a href="AboutUs">About Us</a>
-        <a href="Faqs">FAQs</a>
-        <a href="Models">Models</a>
-    </div>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="subject">Subject</label>
+											<input type="text" name="subject" id="subject" />
+										</div>
+										<div class="field">
+											<label for="message">Notes</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
 
-    <div class="container">
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-            <p><strong>Email:</strong> info@example.com</p>
-            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-        </div>
+										<div class="field half text-right">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">ctrldriveautoescapes@company.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+63 012 345 6789</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<span>España Blvd, Sampaloc, Manila, 1008 Metro Manila</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
 
-        <div class="contact-form">
-            <h2>Contact Form</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							
+							<ul class="copyright">
+								<li>Copyright  © 2023 CtrlDrive Auto Escapes</li>
+							</ul>
+						</div>
+					</footer>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
+			</div>
 
-    </body>
+		<!-- Scripts -->
+            <script src="{{asset('/js/jquery.min.js')}}"></script>
+			<script src="{{asset('/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+			<script src="{{asset('/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{asset('/js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{asset('/js/browser.min.js')}}"></script>
+			<script src="{{asset('/js/breakpoints.min.js')}}"></script>
+			<script src="{{asset('/js/util.js')}}"></script>
+			<script src="{{asset('/js/main.js')}}"></script>
+
+	</body>
 </html>

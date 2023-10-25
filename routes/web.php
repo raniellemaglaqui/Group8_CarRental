@@ -28,3 +28,15 @@ Route::get('/Models', function () {
 Route::get('/AboutUs', function () {
     return view('AboutUs');
 });
+Route::get('/Offers', function () {
+    return view('Offers');
+});
+Route::get('/Terms', function () {
+    return view('Terms');
+});
+Route::get('/Testimonials', function () {
+    return view('Testimonials');
+});
+Route::get('/Team', function () {
+    return view('Team');
+});
