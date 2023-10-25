@@ -23,7 +23,7 @@
 				<!-- Menu -->
 				<nav id="menu">
 					<ul class="links">
-		                <li class="active"> <a href="welcome">Home </a> </li>
+		                <li class="active"> <a href="welcome">Dashboard </a> </li>
 
 		                <li> <a href="Offers">Offers</a> </li>
 
