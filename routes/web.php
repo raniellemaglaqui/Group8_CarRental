@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\TestimonialsController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Reservation;
+use App\Models\Testimonials;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +34,7 @@ Route::get('/AboutUs', function () {
 });
 Route::get('/Offers', function () {
     return view('Offers');
-});
+})->name('Offers');
 Route::get('/Terms', function () {
     return view('Terms');
 });
@@ -46,6 +50,13 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        $reservations = Reservation::all();
+        return view('dashboard', compact('reservations'));
     })->name('dashboard');
 });
+
+
+Route::post('/Offers',[ReservationController::class,'store'])->name('reserve');
+Route::get('/Testimonys',[TestimonialsController::class,'index'])->name('testimonys');
+Route::get('/Testimonials',[TestimonialsController::class,'index2'])->name('testimonials');
+Route::post('/Testimonials',[TestimonialsController::class,'store'])->name('testimony');
